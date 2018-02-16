@@ -1,9 +1,10 @@
 version: '3'
 services:
   app:
-    build:
-      context: ./src
-      dockerfile: Dockerfile
+    image: checkfiles_app
+    # build:
+      # context: ./src
+      # dockerfile: Dockerfile
     command: sleep infinity
     volumes:
     - /backup:/backup:ro

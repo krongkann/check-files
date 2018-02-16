@@ -4,4 +4,4 @@ COPY package.json package-lock.json /
 RUN npm install 
 
 COPY app.coffee /app.coffee
-
+COPY holidays.csv /holidays.csv
